@@ -29,7 +29,7 @@ class Patient
 
   def doctors
     # that iterates over that patient's appointments and collects the doctor that belongs to each appointment.
-    appointments.map do |appoint_instance|
+    appointments.map do |appointment_instance|
       appointment_instance.doctor
     end
   end
