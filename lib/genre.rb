@@ -11,4 +11,7 @@ attr_accessor :songs
     @@all
   end
 
+  def songs
+  end
+
 end
