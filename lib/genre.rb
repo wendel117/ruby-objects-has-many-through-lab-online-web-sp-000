@@ -32,12 +32,7 @@ class Genre
     end
   end
 
-  def appointments
-    #that iterates through the appointments array and returns appointments that belong to the patient.
-    Appointment.all.select do |appointment_instance|
-        appointment_instance.patient == self
-    end
-  end
+
 
 #  def artists
     #an instance method, #artists, that iterates over the genre's collection of songs and collects the artist that owns each song.
