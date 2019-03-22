@@ -27,8 +27,15 @@ class Genre
 
   def artists
     #that iterates through the appointments array and returns appointments that belong to the patient.
-    artists.all.select do |genres_instance|
+    artist.all.select do |artists_instance|
         genres_instance.artist == self
+    end
+  end
+
+  def appointments
+    #that iterates through the appointments array and returns appointments that belong to the patient.
+    Appointment.all.select do |appointment_instance|
+        appointment_instance.patient == self
     end
   end
 
