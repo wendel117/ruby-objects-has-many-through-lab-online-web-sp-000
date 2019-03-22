@@ -21,12 +21,7 @@ class Genre
   def songs
         Song.all.select {|thing| thing.genre == self}
    end
-#  def songs
-    ##songs, that iterates through all songs and finds the songs that belong to that genre
-#    song.all.select do |song_instance|
-#      song_instance.genres == self
-#    end
-#  end
+
 
   def artists
     #an instance method, #artists, that iterates over the genre's collection of songs and collects the artist that owns each song.
