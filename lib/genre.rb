@@ -20,7 +20,7 @@ class Genre
 
   def songs
     ##songs, that iterates through all songs and finds the songs that belong to that genre
-    Songs.all.select do |song_instance|
+    song.all.select do |song_instance|
       song_instance.genres == self
     end
   end
